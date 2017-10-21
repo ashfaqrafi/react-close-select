@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.card-bg{
+  padding: 1rem;
+  height: 100px;
+  background-color: dimgrey;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.container{
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.flr{
+    float: right;
+}
+
+.fll{
+    float: left;
+}
+
+.cross-bttn{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.db{
+    display: block;
+}
+
+.dn{
+    display: none;
+}
+
+.add-select select {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    /* line-height: 1; */
+    /* border: 1px solid #646464; */
+    border-radius: 5px;
+    height: 34px;
+    /* background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right; */
+    background: url(./arrow-down.png) no-repeat right;
+    -webkit-appearance: none;
+    border: none;
+    background-color: #F2F2F2 !important;
+    background-position-x: 115px;
+}
+
+select.large {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.height-5r {
+    height: 5rem !important;
+}
+
+select#selectPointOfInterest
+{
+    width                    : 185pt;
+    height                   : 40pt;
+    line-height              : 40pt;
+    padding-right            : 20pt;
+    text-indent              : 4pt;
+    text-align               : left;
+    vertical-align           : middle;
+    box-shadow               : inset 0 0 3px #606060;
+    border                   : 1px solid #acacac;
+    -moz-border-radius       : 6px;
+    -webkit-border-radius    : 6px;
+    border-radius            : 6px;
+    -webkit-appearance       : none;
+    -moz-appearance          : none;
+    appearance               : none;  /*IMPORTANT*/
+    font-family              : Arial,  Calibri, Tahoma, Verdana;
+    font-size                : 18pt;
+    font-weight              : 500;
+    color                    : #000099;
+    cursor                   : pointer;
+    outline                  : none;
+}
+select#selectPointOfInterest::-ms-expand {display: none;} /*FOR IE*/
+select#selectPointOfInterest option
+{
+    padding             : 4px 10px 4px 10px;
+    font-size           : 11pt;
+    font-weight         : normal;
+}
+select#selectPointOfInterest option[selected]{ font-weight:bold}
+select#selectPointOfInterest option:nth-child(even) { background-color:#f5f5f5; }
+select#selectPointOfInterest:hover {font-weight: 700;}
+select#selectPointOfInterest:focus {box-shadow: inset 0 0 5px #000099; font-weight: 600;}
+
+/*LABEL FOR SELECT*/
+label#lblSelect{ position: relative; display: inline-block;}
+/*DOWNWARD ARROW (25bc)*/
+label#lblSelect::after
+{
+    content                 : "\25bc";
+    position                : absolute;
+    top                     : 0;
+    right                   : 0;
+    bottom                  : 0;
+    width                   : 20pt;
+    line-height             : 40pt;
+    vertical-align          : middle;
+    text-align              : center;
+    background              : #000099;
+    color                   : #fefefe;
+    -moz-border-radius       : 0 6px 6px 0;
+    -webkit-border-radius    : 0 6px 6px 0;
+    border-radius           : 0 6px 6px 0;
+    pointer-events          : none;
+}
